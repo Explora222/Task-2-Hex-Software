@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TaskFlow</h1>
+            <p>Organize your day with ease</p>
+        </header>
+
+        <main>
+            <form id="task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="Add a new task..." 
+                    aria-label="New task input"
+                    required
+                >
+                <button type="submit" id="add-task-btn" aria-label="Add task">
+                    <span>Add</span>
+                </button>
+            </form>
+
+            <div class="tasks-container">
+                <h2>Your Tasks</h2>
+                <ul id="task-list" aria-live="polite">
+                    
+                </ul>
+                <p id="empty-message">No tasks yet. Add one above!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Designed By Shumani Monyai</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
